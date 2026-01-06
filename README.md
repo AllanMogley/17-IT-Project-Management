@@ -20,9 +20,27 @@ The Municipal scooter service system allows citizens to order and use scooters l
 
 The system employs a microservices architecture where each component operates as an independent microservice, operating within containers on the Amazon Web Services (AWS) platform and overseen by Kubernetes orchestration.
 
-This design facilitates autonomous updating and scaling of individual services including functions like request handling, fleet management, notifications and user processes.
+> This design facilitates autonomous updating and scaling of individual services including functions like request handling, fleet management, notifications and user processes.
+> 
 
 ![](https://github.com/AllanMogley/17-IT-Project-Management/blob/main/System%20Components%20Architecture.png?raw=true)
+
+### **Containers**
+
+Functionality within the system is compartmentalized into separate applications to enhance modularity and segregation of tasks:
+
+> a citizen-oriented mobile/web app for scooter requests
+> 
+
+> an administrative tool for municipal staff to oversee service operations
+> 
+
+> technicians who manage and repair these scooters.
+> 
+
+![](https://github.com/AllanMogley/17-IT-Project-Management/blob/main/System%20Containers%20Architecture.png?raw=true)
+
+This architecture facilitates autonomous development, deployment and scalability of each application based on its distinct operational and performance requisites.
 
 ---
 
